@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Hammersmith One', sans-serif;
+    /*background: #fde2e2;*/
+    background:  #faf2f2;
+}
+
+header {
+    display: flex;
+    background-color: #010a43;
+    width: 100%;
+    margin: auto;
+    height: 15vh;
+    align-items:center;
+    
+    
+  
+}
+
+.logo-container,
+.nav-link {
+    display: flex;
+}
+.logo-container {
+    
+    flex: 1;
+    width: 80%;
+    
+}
+nav {
+    flex: 2;
+}
+.nav-link {
+    
+    font-size: 27px;
+    text-decoration: none;
+    
+    
+}
+.nav-bar {
+   display: flex;
+   justify-content: space-evenly;
+  
+}
+.presentation {
+    display:flex;
+    width: 95%;
+    margin:auto;
+    min-height:100vh;
+    align-items:center;
+
+
+}
+.introduction {
+    flex: 1;
+  
+}
+.container {
+    flex: 1;
+}
+.intro-text {
+    /*font-family:  'Acme', sans-serif;*/
+    font-size: 25px;
+    color: #010a43;
+}
+.container img {
+    height:50vh;
+    /*text-align: center;
+    display:flex;
+    height: 60vh;
+    width:auto;
+    position: relative;
+    top: 100px;*/
+    
+
+    
+
+}
