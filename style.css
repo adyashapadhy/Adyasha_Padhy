@@ -12,13 +12,16 @@ body {
 
 header {
     display: flex;
+   
     background-color: #010a43;
     width: 100%;
     margin: auto;
     height: 15vh;
     align-items:center;
-    
-    
+    /*
+    position: fixed;
+    top:0px;
+    */
   
 }
 
@@ -39,37 +42,46 @@ nav {
     
     font-size: 27px;
     text-decoration: none;
+    list-style: none;
     
     
 }
 .nav-bar {
+
    display: flex;
    justify-content: space-evenly;
+   list-style: none;
   
 }
 .presentation {
     display:flex;
     width: 95%;
     margin:auto;
-    min-height:100vh;
+    min-height:80vh;
     align-items:center;
 
 
 }
 .introduction {
-    flex: 1;
+    flex: 3;
+    
   
 }
 .container {
-    flex: 1;
+    flex: 4;
+    
 }
 .intro-text {
     /*font-family:  'Acme', sans-serif;*/
-    font-size: 25px;
+    font-size: 20px;
     color: #010a43;
+    position: relative;
+    left: 70px;
+    
 }
 .container img {
     height:50vh;
+    width: 90vh;
     /*text-align: center;
     display:flex;
     height: 60vh;
@@ -80,4 +92,97 @@ nav {
 
     
 
+}
+.about-container {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    margin:auto;
+    min-height:80vh;
+    align-items:center;
+    
+
+    
+}
+.content {
+    padding: 60px;
+    margin:40px;
+    font-size: 30px;
+    bottom: 20px;
+    color: #010a43;
+    font-family: 'Josefin Sans', sans-serif;
+    
+  
+   
+    /*
+    word-wrap: break-word;
+    word-break: break-all;
+    */
+}
+.image {
+    
+    display: flex;
+    padding: 50px;
+    margin: 40px;
+    height: 70vh;
+
+}
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    margin:auto;
+    min-height:80vh;
+    align-items:center;  
+}
+
+.info {
+    color: #010a43;
+    font-size: 29px;
+    margin: 90px;
+    align-items: center;
+}
+.info-img {
+    display: flex;
+    padding: 50px;
+    margin: 30px;
+    height: 50vh;
+    
+}
+.blog-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    margin:auto;
+    min-height:80vh;
+    align-items:center;  
+}
+.blog-info {
+    color: #010a43;
+    font-size: 40px;
+    margin: 90px;
+    align-items: center; 
+}
+.blog-img {
+    display: flex;
+    padding: 50px;
+    margin: 20px;
+    height: 50vh;
+    
+}
+.footer-container {
+    display: flex;
+    position: relative;
+    padding: 30px ;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color:#fde2e2;
+    color:  #010a43;
+    text-align: center;
+    justify-content: space-evenly;
 }
