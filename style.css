@@ -3,11 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
 }
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg)
+    }
 
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
 body {
     font-family:  'Hammersmith One', sans-serif;
     /*background: #fde2e2;*/
     background:  #faf2f2;
+    
 }
 
 header {
@@ -59,7 +70,7 @@ nav {
     margin:auto;
     min-height:80vh;
     align-items:center;
-
+    animation: transitionIn 0.75s;
 
 }
 .introduction {
@@ -102,7 +113,7 @@ nav {
     margin:auto;
     min-height:80vh;
     align-items:center;
-    
+    animation: transitionIn 0.75s;
 
     
 }
@@ -124,7 +135,7 @@ nav {
 .image {
     
     display: flex;
-    padding: 50px;
+    padding: 30px;
     margin: 40px;
     height: 70vh;
 
@@ -137,6 +148,7 @@ nav {
     margin:auto;
     min-height:80vh;
     align-items:center;  
+    animation: transitionIn 0.75s;
 }
 
 .info {
@@ -146,11 +158,62 @@ nav {
     align-items: center;
 }
 .info-img {
+  
     display: flex;
     padding: 50px;
     margin: 30px;
     height: 50vh;
     
+}
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    padding: 90px;
+    margin: 50px;
+    /*height: 40px;*/
+    background:#f9fcfb;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #fde2e2;
+    color: #010a43;
+    font-size: 24px;
+}
+
+.txtb {
+    border: 1px solid #010a43;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    
+}
+.txtb label {
+    display:block;
+    text-align: left;
+    text-transform: uppercase;
+
+
+}
+.txtb input, .txtb textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    outline:none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.btn {
+    display: inline-block;
+    background: #fde2e2;
+    padding: 14px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
 }
 .blog-container {
     display:flex;
@@ -160,6 +223,7 @@ nav {
     margin:auto;
     min-height:80vh;
     align-items:center;  
+    animation: transitionIn 0.75s;
 }
 .blog-info {
     color: #010a43;
@@ -173,6 +237,17 @@ nav {
     margin: 20px;
     height: 50vh;
     
+}
+.blog-headings {
+    text-align: left;
+    padding: 20px;
+    margin: 40px;
+    font-size: 35px;
+}
+a {
+    color: #010a43;
+    text-decoration: none;
+    border-bottom: 1px solid #fde2e2;
 }
 .footer-container {
     display: flex;
