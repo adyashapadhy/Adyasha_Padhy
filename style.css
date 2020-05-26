@@ -18,6 +18,7 @@ body {
     font-family:  'Hammersmith One', sans-serif;
     /*background: #fde2e2;*/
     background:  #faf2f2;
+    background-size: cover;
     
     
 }
@@ -27,6 +28,8 @@ header {
    
     background-color: #010a43;
     width: 100%;
+    min-width: 75%;
+    max-width: 100%;
     
     margin: auto;
     height: 15vh;
@@ -87,15 +90,15 @@ nav {
 }
 .intro-text {
     /*font-family:  'Acme', sans-serif;*/
-    font-size: 20px;
+    font-size: 18px;
     color: #010a43;
     position: relative;
     left: 70px;
     
 }
 .container img {
-    height:50vh;
-    width: 90vh;
+    height:40vh;
+    width: 80vh;
     /*text-align: center;
     display:flex;
     height: 60vh;
@@ -192,6 +195,7 @@ nav {
     margin: auto;
 
 }
+/*
 .txtb {
     border: 1px solid #010a43;
     margin: 8px 0;
@@ -223,6 +227,7 @@ nav {
     margin-top: 8px;
     width: 100%;
 }
+*/
 .blog-container {
     display:flex;
     flex-direction: column;
@@ -255,7 +260,7 @@ nav {
 a {
     color: #010a43;
     text-decoration: none;
-    border-bottom: 1px solid #fde2e2;
+    /*border-bottom: 1px solid #010a43;*/
 }
 .write-ups {
     display:flex;
@@ -331,4 +336,143 @@ a {
     text-align: center;
     justify-content: flex-end;
 }
+/*iphone 8*/
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px)  
+{   .intro-text {
+    position:relative;
+        left: 5px;
+        text-align: left;
+        font-size: 0.75rem;
+    }
+    .contents p{
+        font-size: 2rem;
+        text-align: justify;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents h1{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents h3{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents img{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+    
+
+
+
+/*iphone 8 plus */
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 736px) 
+{   .logo-container{
+    width: 80%;
+}
+    .intro-text {
+            position:relative;
+            left: 4px;
+            text-align: start;
+            font-size: 0.85rem;
+            
+        }
+    .about-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-size: 0.5rem;
+            
+        }
+    .about-content{
+            text-align: justify;
+            margin-left: 0%;
+            margin-right: 0%;
+        }  
+    .contents p{
+            font-size: 1.5rem;
+            text-align: justify;
+            margin-left: 0%;
+            margin-right: 0%;  
+    }    
+    .contents h1{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents h3{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents img{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+/*iphone se*/
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px)
+ {  .header {
+     width: 80%;
+     
+ }
+     
+    .nav-link {
+        width:auto;
+        margin-top:0;
+        font-size: 1.5rem;
+    }
+    
+    .intro-text {
+       
+        position:relative;
+        left: 5px;
+        text-align: left;
+        font-size: 0.75rem;
+    }
+    .container-img{
+       width: 100%;
+       max-width: 400px;
+       height: auto;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1rem;
+        
+    }
+    .about-content{
+        text-align: justify;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents p{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contents h1{
+        font-size: 1.5rem;
+
+    }
+    .contents h3{
+        font-size: 1rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .comtents img{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+ }
+
 
