@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 @keyframes transitionIn {
     from {
@@ -21,11 +22,12 @@ body {
     background-size: cover;
     
     
+    
 }
 
 header {
     display: flex;
-   
+    z-index: 9999999999;
     background-color: #010a43;
     width: 100%;
     min-width: 75%;
@@ -53,6 +55,7 @@ header {
 }
 nav {
     flex: 2;
+    z-index: 9999999999;
 }
 .nav-link {
     
@@ -70,6 +73,19 @@ nav {
    max-width: 95%
   
 }
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fde2e2;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
 .presentation {
     display:flex;
     width: 95%;
@@ -84,7 +100,7 @@ nav {
     
   
 }
-.container {
+.img-container {
     flex: 4;
     
 }
@@ -96,9 +112,9 @@ nav {
     left: 70px;
     
 }
-.container img {
-    height:40vh;
-    width: 80vh;
+.img-container {
+    height:60vh;
+    width: 70vh;
     /*text-align: center;
     display:flex;
     height: 60vh;
@@ -159,7 +175,7 @@ nav {
     color: #010a43;
     font-size: 29px;
     margin: 90px;
-    align-items: center;
+    text-align: center;
 }
 .info-img {
   
@@ -327,7 +343,7 @@ a {
 .footer-container {
     display: flex;
     position: relative;
-    padding: 50px ;
+    padding: 20px ;
     left:0;
     bottom: 0;
     width: 100%;
@@ -336,16 +352,66 @@ a {
     text-align: center;
     justify-content: flex-end;
 }
-/*iphone 8*/
-@media only screen 
-and (min-width : 375px) 
-and (max-width : 667px)  
-{   .intro-text {
-    position:relative;
+
+/*
+@media screen and(max-width:1024px){
+    .nav-links{
+       width: 90%;
+    
+    }
+}
+*/
+@media screen and (max-width:768px)
+{  
+
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        display: block;
+    }
+    
+    
+    
+    .nav-bar{
+       position: absolute;
+       right: 0px;
+       height: 0vh;
+       top: 15vh;
+       background-color: #010a43;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 80%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+    }
+
+    .nav-link{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    
+    .intro-text {
+        position:relative;
         left: 5px;
         text-align: left;
         font-size: 0.75rem;
     }
+   
+   
+  
+    .img-container{
+        display: block;
+        
+        
+    } 
     .contents p{
         font-size: 2rem;
         text-align: justify;
@@ -355,6 +421,7 @@ and (max-width : 667px)
     .contents h1{
         margin-left: 0%;
         margin-right: 0%;
+        font-size: 3rem;
     }
     .contents h3{
         margin-left: 0%;
@@ -364,18 +431,69 @@ and (max-width : 667px)
         margin-left: 0%;
         margin-right: 0%;
     }
+    .info-img{
+        padding:0px;
+        margin:0px;
+        height: 20vh;
+    }
+    .info{
+        margin: 0px;
+        padding: 0px;
+        font-size: 2rem;
+    }
+    
+    .contact-links{
+        margin: 5px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .blog-img{
+        margin: 0px;
+        padding: 0px;
+        height: 30vh;
+    }
+    .image{
+        padding:0px;
+        height: 40vh;
+        margin:0px;
+    }
+} 
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
     
 
 
 
 /*iphone 8 plus */
+/*
 @media only screen 
 and (min-width : 414px) 
 and (max-width : 736px) 
 {   .logo-container{
     width: 80%;
-}
+    }
     .intro-text {
             position:relative;
             left: 4px;
@@ -383,6 +501,12 @@ and (max-width : 736px)
             font-size: 0.85rem;
             
         }
+    
+    .container-img {
+        height: 1rem;
+        width: 1rem;
+        overflow-x: hidden;
+    }    
     .about-container{
             display: flex;
             flex-direction: column;
@@ -402,6 +526,7 @@ and (max-width : 736px)
             margin-right: 0%;  
     }    
     .contents h1{
+        font-size: 2rem;
         margin-left: 0%;
         margin-right: 0%;
     }
@@ -413,17 +538,49 @@ and (max-width : 736px)
         margin-left: 0%;
         margin-right: 0%;
     }
+    .info-img{
+        padding:0px;
+        margin:0px;
+        height: 20vh;
+    }
+    .info{
+        margin: 0px;
+        padding: 0px;
+        font-size: 2rem;
+    }
+    .contact-links{
+        margin: 0px;
+        padding: 0px;
+        font-size: 1rem;
+    }
+    .blog-img{
+        margin: 0px;
+        padding: 0px;
+        height: 30vh;
+    }
+    .image{
+        padding:0px;
+        height: 40vh;
+        margin:0px;
+    }
+    
 }
-
+*/
 /*iphone se*/
+/*
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 568px)
  {  .header {
      width: 80%;
      
- }
-     
+    }
+    
+    .container-img{
+        height: 30vh;
+        width: 40vh;
+        overflow-x: hidden;
+    } 
     .nav-link {
         width:auto;
         margin-top:0;
@@ -461,7 +618,7 @@ and (max-width : 568px)
         margin-right: 0%;
     }
     .contents h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
     .contents h3{
@@ -473,6 +630,32 @@ and (max-width : 568px)
         margin-left: 0%;
         margin-right: 0%;
     }
- }
-
-
+    .info-img{
+        padding:0px;
+        margin:0px;
+        height: 20vh;
+    }
+    .info{
+        margin: 0px;
+        padding: 0px;
+        font-size: 2rem;
+       
+    }
+    .contact-links{
+        margin: 0px;
+        padding: 0px;
+        font-size: 1rem;
+    }
+    .blog-img{
+        margin: 0px;
+        padding: 0px;
+        height: 30vh;
+    }
+    .image{
+        padding:0px;
+        height: 40vh;
+        margin:0px;
+    }
+    
+}
+*/
