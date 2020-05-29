@@ -125,7 +125,7 @@ nav {
 }
 .intro-text {
     /*font-family:  'Acme', sans-serif;*/
-    font-size: 18px;
+    font-size: 30px;
     color: #010a43;
     position: relative;
     left: 60px;
@@ -170,7 +170,7 @@ nav {
     font-size: 30px;
     bottom: 20px;
     color: #010a43;
-    font-family: 'Crimson Text', serif;
+    font-family:  'Harmattan', sans-serif;
     text-align: justify;
     text-justify: inter-word;
 
@@ -356,7 +356,7 @@ a {
     bottom: 20px;
     align-items: center;
     color: #010a43;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Harmattan', sans-serif;
     text-align: justify;
     text-justify: inter-word;
     
