@@ -302,7 +302,7 @@ a {
 .contents h1 {
     display: flex;
     color: #010a43;
-    font-size: 40px;
+    font-size: 60px;
     margin-right: 150px;
     margin-left: 150px;
     margin-top: 40px;
@@ -359,7 +359,8 @@ a {
     background-color:#fde2e2;
     color:  #010a43;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: center;
+    opacity: 80%;
 }
 
 /*
@@ -417,6 +418,18 @@ a {
         
         
     } 
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 0.5rem;
+        
+    }
+    .about-content{
+        text-align: justify;
+        margin-left: 0%;
+        margin-right: 0%;
+    }  
     .contents p{
         font-size: 2rem;
         text-align: justify;
@@ -426,7 +439,7 @@ a {
     .contents h1{
         margin-left: 0%;
         margin-right: 0%;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .contents h3{
         margin-left: 0%;
@@ -438,19 +451,20 @@ a {
     }
     .info-img{
         padding:0px;
-        margin:0px;
-        height: 20vh;
+        margin-top:10px;
+        height: 40vh;
     }
     .info{
-        margin: 0px;
+        
+        margin-top: 30px;
         padding: 0px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .contact-links{
         margin: 5px;
-        padding: 5px;
-        font-size: 1rem;
+        padding: 10px;
+        font-size: 1.5rem;
     }
     .blog-img{
         margin: 0px;
