@@ -7,10 +7,22 @@
 @keyframes transitionIn {
     from {
         opacity: 0;
-        transform: rotateX(-10deg)
+        transform: rotateX(-10deg);
     }
 
     to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes transitionX{
+    from {
+        opacity: 0;
+        transform: rotateX(-20deg);
+    }
+
+    to{
         opacity: 1;
         transform: rotateX(0deg);
     }
@@ -102,7 +114,8 @@ nav {
 
 }
 .introduction {
-    flex: 2;
+    flex: 3;
+   
     
   
 }
@@ -116,12 +129,13 @@ nav {
     color: #010a43;
     position: relative;
     left: 60px;
+    animation: transitionX 1s;
     
 }
-.img-container {
-    margin: 10px;
-    height:50%;
-    width: 50%;
+.img-container>img {
+    
+    height:70%;
+    width: 60%;
     padding: 10px;
     align-items: center;
     /*text-align: center;
@@ -372,7 +386,7 @@ a {
 }
 */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     
     body{
         overflow-x: hidden;
@@ -382,7 +396,7 @@ a {
     {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 100vh;
         top: 15vh;
         background-color: #010a43;
         display: flex;
@@ -401,23 +415,39 @@ a {
        display: block;
        cursor: pointer;
    }
-    
+    .introduction{
+        align-items: center;
+        text-align: center;
+        word-wrap: break-word;
+    }
     .intro-text {
-        left: 10px
-        text-align: left;
-        font-size: 15px;
+        font-weight: bolder;
+        margin-top:70px;
+        font-size: 30px;
+        position: relative;
+        left: 10px;
     }
    
    
   
-    .img-container{
+    .img-container>img{
        
-       height: 50%;
-       width: 50%;
+       height: 85%;
+       width: 85%;
+       margin-top: 70px;
+       position: relative;
+       left: 40px;
+       padding: 10px;
        
         
         
     } 
+    .presentation{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .about-container{
         display: flex;
         flex-direction: column;
@@ -463,8 +493,8 @@ a {
     }
     
     .contact-links{
-        margin: 5px;
-        padding: 10px;
+        margin: 10px;
+        padding: 20px;
         font-size: 1rem;
     }
     .blog-img{
