@@ -33,8 +33,10 @@
 body {
     font-family:  'Hammersmith One', sans-serif;
     /*background: #fde2e2;*/
+    /*#f1d1d1
     background:  #faf2f2;
-   
+    */
+    background-image: linear-gradient(20deg, #ffffff, #fde2e2);
     background-size: cover;
     
     
