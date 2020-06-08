@@ -171,7 +171,7 @@ nav {
 }
 .about-content {
     padding: 60px;
-    margin:20px;
+    margin:10px;
     margin-right: 150px;
     margin-left: 150px;
     font-size: 30px;
@@ -186,6 +186,7 @@ nav {
     
     display: flex;
     padding: 30px;
+    margin-top: 50px;
     margin: 40px;
     height: 70vh;
 
@@ -380,7 +381,7 @@ a {
 .footer-container {
     display: flex;
     position: relative;
-    padding: 20px ;
+    padding: 15px ;
     left:0;
     bottom: 0;
     width: 100%;
@@ -472,6 +473,7 @@ a {
         font-size: 0.5rem;
         
     }
+    
     .about-content{
         text-align: justify;
         margin-left: 0%;
@@ -521,8 +523,8 @@ a {
     }
     .image{
         padding:0px;
-        height: 40vh;
-        margin:0px;
+        height: 50vh;
+        margin-top:50px;
     }
 } 
 
