@@ -327,9 +327,9 @@ nav {
     margin: 15px;
     margin-bottom: 50px;
     padding: 40px 30px;
-    background: #ffe6eb;
+    background: #010a43;
     border-radius: 20px;
-    box-shadow: -6px -6px 20px rgba(247,247,247,1) ,
+    box-shadow: -6px -6px 20px rgba(255,255,255,1) ,
                 6px 6px 20px rgba(0,0,0,0.1);
 }
 /*
@@ -347,7 +347,7 @@ nav {
 }
 
 .blog-headings .card .contentBx h2{
-    color: #010a43;
+    color: #fde2e2;
     font-weight: 700;
     font-size: 1.6em;
     letter-spacing: 2px;
@@ -355,7 +355,7 @@ nav {
 }
 
 .blog-headings .card .contentBx p{
-    color: #010a43;
+    color: #fde2e2;
 }
 
 .blog-headings .card .contentBx a 
@@ -364,15 +364,15 @@ nav {
     padding: 10px 20px;
     margin-top: 25px;
     border-radius: 40px;
-    color: #010a43;
+    color: #fde2e2;
     font-size: 16px;
     text-decoration: none;
-    box-shadow:  -4px -4px 15px rgba(247,247,247,1)
+    box-shadow:  -4px -4px 15px rgba(255,255,255,1)
                 4px 4px 15px rgba(0,0,0,0.1);
 }
 
 .blog-headings .card .contentBx a:hover{
-    box-shadow:  insert -4px -4px 10px rgba(247,247,247,1),
+    box-shadow:  insert -4px -4px 10px rgba(255,255,255,1),
     insert 4px 4px 10px rgba(0,0,0,0.1);
 }
 
