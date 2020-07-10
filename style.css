@@ -65,24 +65,9 @@ header {
   
 }
 
-.toggle-button {
-    position: absolute;
-    top: 3rem;
-    right: 2rem;
-    display: none;
-    flex-direction:column;
-    justify-content: space-between;
-    width: 40px;
-    height: 25px;
 
-}
-.toggle-button .bar {
-    
-    height: 4px;
-    width: 100%;
-    background-color: #fde2e2;
-    border-radius: 10px;
-}
+  
+
 .logo-container,
 .nav-link {
     display: flex;
@@ -97,7 +82,7 @@ nav {
     flex: 2;
     z-index: 9999999999;
 }
-.nav-link {
+.nav-bar li{
     
     font-size: 27px;
     text-decoration: none;
@@ -157,7 +142,7 @@ nav {
     height: 60vh;
     width:auto;
     position: relative;
-    top: 100px;*/
+    top: 10%;*/
     
 
     
@@ -231,7 +216,7 @@ nav {
     max-width: 600px;
     padding: 90px;
     margin: 50px;
-    /*height: 40px;
+    height: 40px;
     background:#f9fcfb;
     display:flex;
     flex-direction: column;
@@ -332,14 +317,7 @@ nav {
     box-shadow: -6px -6px 20px rgba(255,255,255,1) ,
                 6px 6px 20px rgba(0,0,0,0.1);
 }
-/*
-.blog-headings:hover{
-    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
 
-                inset 6px 6px 20px rgba(0,0,0,0.05);
-
-}
-*/
 .blog-headings .card .contentBx{
     position: relative;
     margin-top: 20px;
@@ -478,33 +456,28 @@ a {
     
 }
 
-/*
-@media screen and(max-width:1024px){
-    .nav-links{
-       width: 90%;
-    
-    }
-}
-*/
+
 
 @media screen and (max-width: 900px){
     
-    
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .line{
+        width: 40px;
+        height: 3px;
+        margin: 8px;
+       
+        background: #fde2e2;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 8%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        
+    }
 
-    }
-    .nav-bar{
-        display: none;
-    }
-    .toggle-button{
-        display: flex;
-    }
-    .nav-bar li.nav-link{
-        width: 100%;
-    }
-    
+   
 
     .introduction{
         align-items: center;

@@ -1,8 +1,11 @@
 
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navLink = document.getElementsByClassName('.nav-link')[0]
+const hamburger = document.querySelector(".hamburger");
+const navBar = document.querySelector(".nav-bar");
+const links = document.querySelector(".nav-bar li");
 
-toggleButton.addEventListener('click', () => {
-  navLink.classList.toggle('active')
-})
+hamburger.addEventListener('click',() => {
+    navBar.classList.toggle("open");
+
+    
+});
