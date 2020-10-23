@@ -180,7 +180,7 @@ nav {
 
 .info {
     color: #010a43;
-    font-size: 29px;
+    font-size: 24px;
     margin: 90px;
     text-align: center;
 }
@@ -549,10 +549,15 @@ a {
         font-size: 1.5rem;
     }
     
-    .contact-links{
-        margin: 10px;
-        padding: 20px;
-        font-size: 1rem;
+    #name-label,#email-label{
+        font-size: 22px;
+        margin-top: 2px;
+        text-align: left;
+        position: relative;
+        
+    }
+    #text{
+        font-size: 22px;
     }
     .blog-info{
         font-size: 50px;
