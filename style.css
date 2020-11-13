@@ -293,7 +293,7 @@ textarea{
     margin: 15px;
     margin-bottom: 50px;
     padding: 40px 30px;
-    background: #010a43;
+    background: #fde2e2;
     border-radius: 20px;
     box-shadow: -6px -6px 20px rgba(255,255,255,1) ,
                 6px 6px 20px rgba(0,0,0,0.1);
@@ -306,7 +306,7 @@ textarea{
 }
 
 .blog-headings .card .contentBx h2{
-    color: #fde2e2;
+    color: #010a43;
     font-weight: 700;
     font-size: 1.6em;
     letter-spacing: 2px;
@@ -314,7 +314,7 @@ textarea{
 }
 
 .blog-headings .card .contentBx p{
-    color: #fde2e2;
+    color: #726a95;
 }
 
 .blog-headings .card .contentBx a 
@@ -323,7 +323,7 @@ textarea{
     padding: 10px 20px;
     margin-top: 25px;
     border-radius: 40px;
-    color: #fde2e2;
+    color: #010a43;
     font-size: 16px;
     text-decoration: none;
     box-shadow:  -4px -4px 15px rgba(255,255,255,1)
